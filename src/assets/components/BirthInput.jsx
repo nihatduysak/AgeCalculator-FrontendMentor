@@ -7,7 +7,6 @@ export default function BirthInput({ setDay, setMonth, setYear, setBirthTime }) 
         if(dataObj.day >= 1 && dataObj.day <= 31 && dataObj.month >= 1 && dataObj.month <= 12 && dataObj.year >= 1800 && dataObj.year <= 2023) {
             setBirthTime(new Date(dataObj.year, dataObj.month, dataObj.day).getTime())
         }
-
     }
 
     return (

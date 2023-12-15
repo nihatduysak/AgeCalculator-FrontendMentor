@@ -21,7 +21,6 @@ body {
 
 .container {
   display: flex;
-  width: 1440px;
   padding: 171px 300px 138px 300px;
   justify-content: center;
   align-items: center;
@@ -42,11 +41,11 @@ body {
 .inputInfos {
   display: flex;
   gap: 32px;
-  padding-right: 220px;
 }
+
 .btn {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
 
   & button {
     border-radius: 60%;
@@ -83,7 +82,6 @@ body {
     border-radius: 8px;
     border: 1px solid var(--Line, #DCDCDC);
   }
-  
 }
 
 .calculateBtn {
@@ -113,5 +111,62 @@ body {
     font-weight: 800;
     line-height: 110%; /* 114.4px */
     letter-spacing: -2.08px;
+  }
+}
+
+@media (width < 400px) {
+
+  .calculator {
+    padding: 88px 16px;
+  }
+
+  .inputInfo {
+
+    & p {
+      color: var(--Grey, #716F6F);
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    & input {
+      display: flex;
+      padding: 12px 16px;
+      align-items: center;
+      gap: 16px;
+      align-self: stretch;
+    }
+  }
+
+  .btn {
+    padding: 32px 0;
+    justify-content: center;
+  }
+
+  .calculateResult {
+
+    & h3 {
+      color: var(--Purple, #854DFF);
+      font-family: Poppins;
+      font-size: 56px;
+      font-style: italic;
+      font-weight: 800;
+      line-height: 110%; /* 61.6px */
+      letter-spacing: -1.12px;
+    }
+
+    & h2 {
+      color: var(--Black, #151515);
+      font-family: Poppins;
+      font-size: 56px;
+      font-style: italic;
+      font-weight: 800;
+      line-height: 110%; /* 61.6px */
+      letter-spacing: -1.12px;
+    }
   }
 }
