@@ -40,7 +40,9 @@ body {
 
 .inputInfos {
   display: flex;
-  gap: 32px;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
 }
 
 .btn {
@@ -116,8 +118,13 @@ body {
 
 @media (width < 400px) {
 
+  .container {
+    padding: 88px 16px 238px 16px;
+  }
+
   .calculator {
-    padding: 88px 16px;
+    padding: 48px 24px;
+    width: 100%;
   }
 
   .inputInfo {
@@ -139,6 +146,7 @@ body {
       align-items: center;
       gap: 16px;
       align-self: stretch;
+      width: 100%;
     }
   }
 
