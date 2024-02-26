@@ -116,7 +116,7 @@ body {
   }
 }
 
-@media (width < 400px) {
+@media (width <= 430px) {
 
   .container {
     padding: 88px 16px 238px 16px;
@@ -125,6 +125,7 @@ body {
   .calculator {
     padding: 48px 24px;
     width: 100%;
+
   }
 
   .inputInfo {
